@@ -1,3 +1,5 @@
+<?php>
+
 class posts_controller extends base_controller {
 
     public function __construct() {
@@ -38,14 +40,4 @@ class posts_controller extends base_controller {
 
     }
 }
-/app/views/v_posts_add.php (new file)
-
-<form method='POST' action='/posts/p_add'>
-
-    <label for='content'>New Post:</label><br>
-    <textarea name='content' id='content'></textarea>
-
-    <br><br>
-    <input type='submit' value='New post'>
-
-</form> 
+</?php>

@@ -14,15 +14,26 @@ class users_controller extends base_controller {
 		echo $this->template;
     }
 	
-    public function p_reserve()  {
 	
-		$_POST['created']  = Time::now();
-		$_POST['modified'] = Time::now();
+	
+    public function tablesorter() {
+        $this->template->content = View::instance('v_users_tablesorter');
+		$this->template->title   = "Info";
 		
-
+		echo $this->template;
     }
 
+	
+	
+    public function tabsheet() {
+        $this->template->content = View::instance('v_users_tabsheet');
+		$this->template->title   = "Tabs";
+		
+		echo $this->template;
+    }
+	
 
+	
     public function signup() {
         $this->template->content = View::instance('v_users_signup');
 		$this->template->title   = "Sign Up";
