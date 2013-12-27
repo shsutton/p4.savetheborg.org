@@ -6,6 +6,22 @@ class users_controller extends base_controller {
     } 
 
 
+	
+    public function calendar() {
+        $this->template->content = View::instance('v_users_calendar');
+		$this->template->title   = "Calendar";
+		
+		echo $this->template;
+    }
+	
+    public function p_reserve()  {
+	
+		$_POST['created']  = Time::now();
+		$_POST['modified'] = Time::now();
+		
+
+    }
+
 
     public function signup() {
         $this->template->content = View::instance('v_users_signup');
@@ -93,7 +109,7 @@ class users_controller extends base_controller {
 
 		Router::redirect("/");
 
-}
+	}
 
 	
 	

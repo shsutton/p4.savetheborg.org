@@ -21,6 +21,7 @@
 
 			<a href='/users/logout'>Logout</a>
 			<a href='/users/profile'>Profile</a>
+			<a href='/users/calendar'>Calendar</a>
 
 		<!-- Menu options for users who are not logged in -->
 		<?php else: ?>
